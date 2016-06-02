@@ -17,7 +17,7 @@ RUN apk update && \
     php-json php-dom php-pdo php-zip php-mysql php-sqlite3 php-apcu \
     php-pdo_pgsql php-bcmath php-gd php-xcache php-odbc php-pdo_mysql \
     php-pdo_sqlite php-gettext php-xmlreader php-xmlrpc php-bz2 php-memcache \
-    php-mssql php-iconv php-pdo_dblib php-curl php-ctype php-fpm
+    php-mssql php-iconv php-pdo_dblib php-curl php-ctype php-fpm php-phar
 
 RUN sed -i "s|;*daemonize\s*=\s*yes|daemonize = no|g" /etc/php/php-fpm.conf && \
   sed -i "s|;*listen\s*=\s*127.0.0.1:9000|listen = 9000|g" /etc/php/php-fpm.conf && \
