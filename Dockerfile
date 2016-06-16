@@ -1,8 +1,7 @@
 FROM alpine:3.3
 
-MAINTAINER Fábio Luciano <fabio.goisl@ctis.com.br>
+MAINTAINER Fábio Luciano <fabioluciano@php.net>
 
-ENV COMPOSER_HOME /usr/share/composer/
 ENV TIMEZONE            America/Sao_Paulo
 ENV PHP_MEMORY_LIMIT    512M
 ENV MAX_UPLOAD          50M
